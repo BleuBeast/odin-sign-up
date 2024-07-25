@@ -1,0 +1,137 @@
+@font-face {
+    font-family: odin-font;
+    src: url(images/Norse-Bold.otf);
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.left-side {
+    background-image: url("images/photo-1585202900225-6d3ac20a6962.avif");
+    background-size: cover;
+    flex: 1;
+}
+
+.right-side {
+    background-color: #F9FAFB;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-side > form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.content-top {
+    /* outline: 1px solid black; */
+    padding: 16px;
+    background-color: #F9FAFB;
+    margin-left: 16px;
+    width: 60%;
+}
+
+.content-middle {
+    /* outline: 1px solid black; */
+    padding: 16px;
+    flex: 1;
+    background-color:  #FFF;
+    box-shadow: 2px 2px 15px 0px #505050;
+}
+
+.content-middle > h3 {
+    margin-left: 16px;
+}
+
+.content-bottom {
+    /* outline: 1px solid black; */
+    padding: 16px;
+    background-color: #F9FAFB;
+    margin-left: 16px;
+}
+
+.content-bottom > button {
+    background-color: #596D48;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 32px;
+    color: #F9FAFB;
+    box-shadow: 2px 2px 5px 0px #505050;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.content-bottom > p > a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 8px 16px;
+}
+
+.field > input {
+    border-radius: 6px;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.field > input:focus-visible {
+    border: none;
+    outline: none;
+}
+
+.field > input:focus {
+    border: 1px solid blue;
+    box-shadow: 2px 2px 5px 0px #505050;
+}
+
+.field > input[type="password"]:invalid {
+    border: 1px solid red;
+}
+
+.field > p.error {
+    margin: 4px;
+    color: red;
+    font-size: .75em;
+}
+
+.left-content {
+    margin-top: 175px;
+    height: 125px;
+    background-color: rgba(0, 0, 0, 55%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-content > img {
+    height: 115px;
+}
+
+.left-content > h1 {
+    color: #FFF;
+    font-size: 5em;
+    font-family: odin-font, sans-serif;
+}
